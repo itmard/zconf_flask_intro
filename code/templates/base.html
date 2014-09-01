@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Zconf 5 Flask{% endblock %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block styles %}
+    {{ super() }}
+    <style>
+        body {
+            /*font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;*/
+            margin-left: 20px;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="container">
+        {% block page_content %}{% endblock %}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}

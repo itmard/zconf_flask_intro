@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+	{% if not login_status %}
+		<h3>Hello, World plz <a class="btn btn-primary" href="{{ url_for('login') }}">log in</a></h3>
+	{% endif %}
+	{% if login_status %}
+  		<h1>Welcome to Zconf</h1>
+  		<h3><a class="btn btn-primary" href="{{ url_for('logout') }}">log out</a></h3>
+  	{% endif %}
+{% endblock %}
